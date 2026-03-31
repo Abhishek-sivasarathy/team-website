@@ -10,9 +10,19 @@ module.exports = {
       colors: {
         primary: '#7C3AED',
         'primary-dark': '#6D28D9',
-        'primary-light': '#8B5CF6',
+        'primary-light': '#A78BFA',
+
+        background: '#F9FAFB',
+        foreground: '#111827',
+
+        muted: '#6B7280',
+        border: '#E5E7EB',
+      },
+      borderRadius: {
+        xl: '12px',
+        '2xl': '16px',
       },
     },
   },
   plugins: [],
-}
+};

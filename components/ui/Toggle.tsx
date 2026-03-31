@@ -14,14 +14,17 @@ export function Toggle({ checked, onChange, disabled = false }: ToggleProps) {
       aria-checked={checked}
       onClick={() => !disabled && onChange(!checked)}
       disabled={disabled}
-      className={`relative inline-flex h-8 w-14 items-center rounded-full transition-colors ${
-        checked ? 'bg-primary' : 'bg-gray-300'
-      } ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
+      className={`
+        relative inline-flex h-7 w-12 items-center rounded-full transition-all duration-200
+        ${checked ? 'bg-primary' : 'bg-gray-300'}
+        ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
+      `}
     >
       <span
-        className={`inline-block h-6 w-6 transform rounded-full bg-white transition-transform ${
-          checked ? 'translate-x-7' : 'translate-x-1'
-        }`}
+        className={`
+          inline-block h-5 w-5 transform rounded-full bg-white shadow-sm transition-all duration-200
+          ${checked ? 'translate-x-6' : 'translate-x-1'}
+        `}
       />
     </button>
   );
